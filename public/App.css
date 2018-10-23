@@ -1,0 +1,21 @@
+#block {
+  width: 50%;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+#block p {
+  margin: 8px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  margin-right: 10px;
+  padding: 5px;
+}
