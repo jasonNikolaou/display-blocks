@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Block = ({ hash, blockHeight, numOfTx }) => {
+const Block = ({ hash, height, time }) => {
   return (
     <div id="block">
       <p>Hash: {hash}</p>
-      <p>Height: {blockHeight}</p>
-      <p>Transactions: {numOfTx}</p>
+      <p>Height: {height}</p>
+      <p>Age: {time}</p>
     </div>
   );
 };
