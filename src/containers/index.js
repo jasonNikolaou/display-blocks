@@ -1,3 +1,4 @@
 import VisibleBlocksContainer from './VisibleBlocksContainer';
-import  ButtonContainer from './ButtonContainer';
-export { VisibleBlocksContainer, ButtonContainer };
+import  { ButtonContainer, RefreshButton } from './ButtonContainer';
+
+export { VisibleBlocksContainer, ButtonContainer, RefreshButton };

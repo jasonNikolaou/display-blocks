@@ -1,2 +1,3 @@
  import ButtonContainer from './ButtonContainer';
- export default ButtonContainer;
+ import RefreshButton from './RefreshButton';
+ export { ButtonContainer, RefreshButton };

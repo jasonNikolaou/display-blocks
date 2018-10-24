@@ -1,11 +1,13 @@
-import fetch from 'cross-fetch';
+import { blockchainData } from '../services-apis';
 
-const fetchBlocks = () => {
-  return dispatch => {
+const fetchBlocks = () => dispatch => {
     dispatch({type: "REQUEST_BLOCKS"});
     //fetch last 5 blocks.
-    return fetch()
-    .then(response => response.json())
-    .then(json => dispatch(type:'RECEIVE_BLOCKS', blocks: json)));
-  }
+    blockchainData(data =>
+      dispatch({
+      type:'RECEIVE_BLOCKS',
+      blocks: data,
+    }));
 };
+
+export { fetchBlocks };

@@ -1,2 +1,3 @@
 import store from './store';
-export { store };
+import { fetchBlocks } from './actions';
+export { store, fetchBlocks };

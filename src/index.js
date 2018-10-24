@@ -11,6 +11,8 @@ import { Buttons } from './components';
 //   blockHeight: 546765,
 //   numOfTx: 1024
 // }];
+
+
 /*
 fetch('https://blockchain.info/q/getblockcount')
 .then(response => response.json())
@@ -26,7 +28,10 @@ fetch('https://blockchain.info/q/getblockcount')
 .catch(err => console.log(err))
 */
 
-console.log("store: ", store.getState());
+// fetch(`https://blockchain.info/blocks/${Date.now()}?format=json`)
+// .then(response => response.json())
+// .then( data => console.log(data))
+// .catch( err => console.log(err));
 
 const App = () => (
   <div>
