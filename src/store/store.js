@@ -1,10 +1,15 @@
 import  appReducer  from './reducers';
 import { createStore, applyMiddleware } from 'redux';
-import thunkMiddleware from 'redux-thunk';
+import { createEpicMiddleware } from 'redux-observable';
+import { fetchBlocksEpic } from './epics';
+
+const epicMiddleware = createEpicMiddleware();
 
 const store = createStore(
   appReducer,
-  applyMiddleware(thunkMiddleware)
+  applyMiddleware(epicMiddleware)
 );
+
+epicMiddleware.run(fetchBlocksEpic);
 
 export default store;

@@ -1,9 +1,8 @@
 import { connect } from 'react-redux';
 import { Button } from '../../components/Button';
-import { fetchBlocks } from '../../store';
 
 const mapDispatchToProps = (dispatch) => ({
-  onClick: () =>  dispatch(fetchBlocks())
+  onClick: () =>  dispatch({type:"REQUEST_BLOCKS"})
 });
 
 const RefreshButton = connect(
